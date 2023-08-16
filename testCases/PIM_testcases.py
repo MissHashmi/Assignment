@@ -32,9 +32,7 @@ class Test_PIM:
 
     def test1_Add_a_new_employee_in_the_PIM_Module(self):
         """Tests the add employee functionality"""
-        self.driver = webdriver.Chrome(
-            executable_path=r"C:\Users\Techwards TB-03\Downloads\chromedriver-win32\chromedriver-win32\chromedriver.exe"
-        )
+        self.driver = webdriver.Chrome()
         self.driver.get(self.url)
         login_object = Login(self.driver)
         login_object.click_url()
